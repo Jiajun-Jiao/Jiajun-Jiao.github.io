@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Jiajun Jiao"
   avatar           : "profile.png"
-  bio              : "Senior student at New York University"
-  location         : "Jersey City, NJ"
-  employer         : "Plum Alley"
+  bio              : "Senior student"
+  location         : 
+  employer         : "New York University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Q74su3AAAAAJ"
   email            : "jiaojiajunqd@gmail.com"

@@ -1,7 +1,7 @@
 ---
-title: "Tutor"
+title: "Tutor - CS102 Data Structure"
 collection: teaching
-type: "Undergraduate course CS102 Data Structure"
+type: "Undergraduate course"
 permalink: /teaching/2023-teaching-2
 venue: "New York University, Courant Institute of Mathematical Sciences"
 date: 2023-05-01
