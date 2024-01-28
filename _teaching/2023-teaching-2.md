@@ -1,5 +1,5 @@
 ---
-title: "Tutor - CS102 Data Structure"
+title: "Tutor - CS102 Data Structure (Summer 2023)"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2023-teaching-2

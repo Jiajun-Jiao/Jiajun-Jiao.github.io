@@ -1,5 +1,5 @@
 ---
-title: "Tutor - CS480 Algorithmic Problem Solving"
+title: "Tutor - CS480 Algorithmic Problem Solving (Fall 2023)"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2023-teaching-3
