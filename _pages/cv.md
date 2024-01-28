@@ -20,7 +20,7 @@ Research Experience
   * University of Notre Dame - Machine Intelligence and kNowledge Engineering (MINE) lab
 
 * 09 2023 - 12 2023: Research Assistant
-  * MIT - Design Computation & Digital Engineering Lab
+  * MIT - Design Computation & Digital Engineering (DeCoDe) Lab
   * Created a novel measure of performance for parametric generation models by training a surrogate model.
   * Designed and developed a neural network model for bicycle dimension parameters prediction.
 
