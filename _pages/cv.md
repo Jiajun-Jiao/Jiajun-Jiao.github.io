@@ -26,8 +26,12 @@ Research Experience
 
 Work Experience
 ======
+* 10 2023 - Now: Venture Technology Intern
+  * Plum Alley, Inc.
+  * Enhanced and modernized the official website using Webflow techniques with HTML, CSS, and JavaScript.
+  * Tailored the subscription features, including custom payment methods and real-time display of invested capital.
 
-* 08 2023 - Now: Backend Software Engineer Intern
+* 08 2023 - 01 2024: Backend Software Engineer Intern
   * UrsaTech, Inc.
   * Developed backend APIs for an online evaluation system in TypeScript and Express.
   * Manipulated MySQL database, used Postman and Mocha for testing, Swagger for documentation.
