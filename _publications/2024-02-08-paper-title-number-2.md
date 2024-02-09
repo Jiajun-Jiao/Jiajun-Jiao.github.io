@@ -1,9 +1,9 @@
 ---
-title: "Elucidating STEM Concepts through Generative AI: A Multi-modal Exploration of Analogical Reasoning"
+title: "SceMQA: A Scientific College Entrance Level Multimodal Question Answering Benchmark"
 collection: publications
 permalink: /publication/2024-02-08-paper-title-number-2
 date: 2024-02-08
-venue: 'In Progress'
+venue: '(in progress)'
 paperurl: 'https://arxiv.org/abs/2402.05138'
 citation: 
 ---
