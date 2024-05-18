@@ -16,7 +16,7 @@ Education
 
 Research Experience
 ======
-* 01 2024 - Now: Research Assistant
+* 05 2024 - Now: Research Assistant
   * University of Notre Dame - Machine Intelligence and kNowledge Engineering (MINE) lab
 
 * 09 2023 - 12 2023: Research Assistant
@@ -26,7 +26,7 @@ Research Experience
 
 Work Experience
 ======
-* 10 2023 - Now: Venture Technology Intern
+* 10 2023 - May 2024: Venture Technology Intern
   * Plum Alley, Inc.
   * Enhanced and modernized the official website using Webflow techniques with HTML, CSS, and JavaScript.
   * Tailored the subscription features, including custom payment methods and real-time display of invested capital.
@@ -83,4 +83,5 @@ Teaching
 Awards
 ======
 * NYU Dean's List for Academic Year
+* NYU University Honors Scholar
 * [freeCodeCamp's Top Open Source Contributors of 2023](https://www.freecodecamp.org/news/top-open-source-contributors-2023/)

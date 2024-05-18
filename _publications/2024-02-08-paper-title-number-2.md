@@ -3,7 +3,7 @@ title: "SceMQA: A Scientific College Entrance Level Multimodal Question Answerin
 collection: publications
 permalink: /publication/2024-02-08-paper-title-number-2
 date: 2024-02-08
-venue: '(in progress)'
+venue: 'ACL'
 paperurl: 'https://arxiv.org/abs/2402.05138'
 citation: 
 ---

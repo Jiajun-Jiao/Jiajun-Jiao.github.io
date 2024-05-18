@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am a senior student at New York University double majoring in Computer Science and Mathematics with a cumulative GPA of 3.92. I've been on the Dean's List from 2020 to 2023, and was recognized as freeCodeCamp's Top Open Source Contributors of 2023. My academic experience includes a wide range of advanced CS explores such as Algorithm, Machine Learning, DevOps & Agile, Cryptography, VR & Graphics, among others.
+I am a incoming MSCS student at UCSD. I finished my undergraudate study double majoring in Computer Science and Mathematics at New York University, with a cumulative GPA of 3.91. I've been on the Dean's List from 2020 to 2024, and was selected as NYU University Honors Scholar. I was also recognized as freeCodeCamp's Top Open Source Contributors of 2023. My academic experience includes a wide range of advanced CS explores such as Algorithm, Machine Learning, DevOps & Agile, Cryptography, VR & Graphics, among others.
 
-I'm currently working as a Venture Technology Intern at Plum Alley, a Software Engineer Intern at UrsaTech, Inc., in which I develop my full-stack skills. In previous semesters, I was the tutor for the undergraduate Algorithmic Problem Solving course and Data Structure course at NYU.
+I'm currently working as Research Assistant at UCSD, mainly focusing on NLP and Multimodal.
