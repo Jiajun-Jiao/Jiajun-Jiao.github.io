@@ -11,13 +11,25 @@ redirect_from:
 
 Education
 ======
+* M.S. in Computer Science and Engineering, UC San Diego, 2024-2026
 * B.A. in Computer Science, New York University, 2020-2024
 * B.A. in Mathematics, New York University, 2020-2024
 
+Publications
+======
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 Research Experience
 ======
-* 05 2024 - Now: Research Assistant
-  * University of Notre Dame - Machine Intelligence and kNowledge Engineering (MINE) lab
+* 06 2024 - Now: Research Assistant
+  * UC San Diego
+
+* 06 2024 - Now: Research Assistant
+  * Beijing Information Science and Technology University
+  * Conducted literature reviews and benchmark reproductions on medical image segmentation of small organs.
+  * Experimented with solutions for better fine-tuning MedSAM model on specific tasks. (AAAI paper in progress)
 
 * 09 2023 - 12 2023: Research Assistant
   * MIT - Design Computation & Digital Engineering (DeCoDe) Lab
@@ -30,6 +42,7 @@ Work Experience
   * Plum Alley, Inc.
   * Enhanced and modernized the official website using Webflow techniques with HTML, CSS, and JavaScript.
   * Tailored the subscription features, including custom payment methods and real-time display of invested capital.
+  * Successfully deployed updates to the live site, available at https://plumalley.co/
 
 * 08 2023 - 01 2024: Backend Software Engineer Intern
   * UrsaTech, Inc.
@@ -41,28 +54,15 @@ Work Experience
   * Developed a web application with a login system, QA feature, and a Unity-integrated code editor, with backend API integrations, using React, TypeScript, and CSS to align with Figma designs.
   * Refactored function components to class-based structures, and incorporated a web-based code editor leveraging Microsoft's Monaco Editor, featuring auto-complete, editable regions, etc. 
   * Integrated a Unity game into the web platform with an event-driven command sequence, established seamless communication by making key Unity functionalities accessible to React components.
-
-* 06 2022 - 08 2022: Software Developer Intern
-  * Yisen Technology
-  * Contributed to the design and development of a scalable Inventory Management System, managing 4,000+ SKUs across various categories, employing React, Express, Node.js, and MongoDB.
-  * Bolstered security with bcrypt.js and JWT, applied unit testing with Mocha covering 85% code.
   
 Skills
 ======
 * Programming
-  * Java, TypeScript, JavaScript, Python, HTML, CSS, C++, MPI, OpenMP
-* Framework
-  * React, Node.js, Express.js, Flask, Handlebars.js, bcrypt.js, PyTorch, Bootstrap
-* Database:
-  * MongoDB, MySQL
-* Technology & Tools:
-  * Github Action, Flask-RESTX, Docker, Kubernetes, Mocha, Chai
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  * Python, Java, TypeScript, JavaScript, HTML, CSS, C++, MPI, OpenMP
+* Frameworks & Libraries
+  * PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, React, Node, Express, Flask
+* Database & Tools
+  * PostgreSQL, MongoDB, Docker, Kubernetes, GitHub Actions, Flask-RESTX
   
 <!-- Talks
 ======
@@ -82,6 +82,7 @@ Teaching
 
 Awards
 ======
-* NYU Dean's List for Academic Year
+* NYU Magna Cum Laude with High Honors
+* NYU Dean's List for Academic Year (2020-2024)
 * NYU University Honors Scholar
 * [freeCodeCamp's Top Open Source Contributors of 2023](https://www.freecodecamp.org/news/top-open-source-contributors-2023/)
