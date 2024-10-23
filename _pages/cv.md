@@ -64,11 +64,11 @@ Skills
 * Database & Tools
   * PostgreSQL, MongoDB, Docker, Kubernetes, GitHub Actions, Flask-RESTX
   
-<!-- Talks
+Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul> -->
+  {% endfor %}</ul>
   
 Teaching
 ======
