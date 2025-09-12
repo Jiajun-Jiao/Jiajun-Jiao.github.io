@@ -15,12 +15,6 @@ Education
 * B.A. in Computer Science, New York University, 2020-2024
 * B.A. in Mathematics, New York University, 2020-2024
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
 Work Experience
 ======
 * April 2025 - Now: AI Product Developer (Full-stack)
@@ -40,6 +34,12 @@ Work Experience
   * Designed and managed MySQL database to store user scoring history, validated APIs with Postman.
   * Incorporated a web-based code editor, featuring editable regions, syntax highlighting, and auto-complete.
   * Integrated a Unity game into the web platform with an event-driven command sequence, resolved inconsistent processing rate between main web services and Unity game engine.
+
+Publications
+======
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
   
 Skills
 ======
