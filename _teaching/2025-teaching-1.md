@@ -1,5 +1,5 @@
 ---
-title: "Tutor - CSE291 Medical Image Analysis (Spring 2025)"
+title: "Teaching Assistant - CSE291 Medical Image Analysis (Spring 2025)"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2025-teaching-1
