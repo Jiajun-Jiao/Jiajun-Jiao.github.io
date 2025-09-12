@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am a master student in Computer Science and Engineering at University of California, San Diego. I'm currently working as Research Assistant. My academic interests lies in Object Detection, Image Segmentation, Video Analysis, QA, Multimodal.
+I am an AI Product Developer at Helport AI, Inc. (Nasdaq: HPAI) and a final-year master's student in Computer Science and Engineering at the University of California, San Diego. I have published two papers, and my research interests span multiple domains, including multimodal learning, security, education, and medical image segmentation.
 
-Previously I finished my undergraudate study double majoring in Computer Science and Mathematics at New York University, with a cumulative GPA of 3.91 and Magna Cum Laude High Honors. I've been on the Dean's List from 2020 to 2024, and was selected as NYU University Honors Scholar. I was also recognized as freeCodeCamp's Top Open Source Contributors of 2023.
+Previously, I earned a double major in Computer Science and Mathematics from New York University, graduating Magna Cum Laude with a cumulative GPA of 3.91. I was on the Dean’s List from 2020 to 2024 and was recognized as an NYU University Honors Scholar. In 2023, I was named one of freeCodeCamp’s Top Open Source Contributors.
