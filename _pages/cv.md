@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* M.S. in Computer Science and Engineering, UC San Diego, 2024-2026
+* M.S. in Computer Science and Engineering, UC San Diego, 2024-2025
 * B.A. in Computer Science, New York University, 2020-2024
 * B.A. in Mathematics, New York University, 2020-2024
 
@@ -21,48 +21,34 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Research Experience
-======
-* 06 2024 - Now: Research Assistant
-  * UC San Diego
-
-* 06 2024 - Now: Research Assistant
-  * Beijing Information Science and Technology University
-  * Conducted literature reviews and benchmark reproductions on medical image segmentation of small organs.
-  * Experimented with solutions for better fine-tuning MedSAM model on specific tasks. (AAAI paper in progress)
-
-* 09 2023 - 12 2023: Research Assistant
-  * MIT - Design Computation & Digital Engineering (DeCoDe) Lab
-  * Created a novel measure of performance for parametric generation models by training a surrogate model.
-  * Designed and developed a neural network model for bicycle dimension parameters prediction.
-
 Work Experience
 ======
-* 10 2023 - May 2024: Venture Technology Intern
+* April 2025 - Now: AI Product Developer (Full-stack)
+  * Helport AI, Inc. (Nasdaq: HPAI)
+  * _For confidentiality reasons, I do not disclose details of my current work publicly. But feel free to reach out if you’d like to chat with me._
+
+* October 2023 - May 2024: Frontend Software Engineer Intern
   * Plum Alley, Inc.
-  * Enhanced and modernized the official website using Webflow techniques with HTML, CSS, and JavaScript.
-  * Tailored the subscription features, including custom payment methods and real-time display of invested capital.
-  * Successfully deployed updates to the live site, available at https://plumalley.co/
+  * Modernized the official website (https://plumalley.co/) using React and JavaScript, improving page responsiveness and load performance, which increased website traffic by 85%.
+  * Implemented outreach features (registration, notifications, feedback collection), achieving 93% user satisfaction.
+  * Used AES-256 encryption for data at rest and TLS 1.2+ for data in transit, satisfying encryption compliance.
+  * Designed responsive layouts for multiple devices and platforms, enhancing accessibility and usability.
 
-* 08 2023 - 01 2024: Backend Software Engineer Intern
+* April 2023 - January 2024: Fullstack Software Engineer Intern
   * UrsaTech, Inc.
-  * Developed backend APIs for an online evaluation system in TypeScript and Express.
-  * Manipulated MySQL database, used Postman and Mocha for testing, Swagger for documentation.
-
-* 04 2023 - 08 2023: Frontend Software Engineer Intern
-  * UrsaTech, Inc.
-  * Developed a web application with a login system, QA feature, and a Unity-integrated code editor, with backend API integrations, using React, TypeScript, and CSS to align with Figma designs.
-  * Refactored function components to class-based structures, and incorporated a web-based code editor leveraging Microsoft's Monaco Editor, featuring auto-complete, editable regions, etc. 
-  * Integrated a Unity game into the web platform with an event-driven command sequence, established seamless communication by making key Unity functionalities accessible to React components.
+  * Developed an educational platform using React, TypeScript, Express, and CSS, integrating login/authentication, Question&Answering, and a Unity-based code editor, fully aligned with Figma UI designs.
+  * Designed and managed MySQL database to store user scoring history, validated APIs with Postman.
+  * Incorporated a web-based code editor, featuring editable regions, syntax highlighting, and auto-complete.
+  * Integrated a Unity game into the web platform with an event-driven command sequence, resolved inconsistent processing rate between main web services and Unity game engine.
   
 Skills
 ======
 * Programming
-  * Python, Java, TypeScript, JavaScript, HTML, CSS, C++, MPI, OpenMP
+  * Python, JavaScript, TypeScript, Java, SQL, HTML, CSS  
 * Frameworks & Libraries
-  * PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, React, Node, Express, Flask
+  * React, Node.js, Express, PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, Flask 
 * Database & Tools
-  * PostgreSQL, MongoDB, Docker, Kubernetes, GitHub Actions, Flask-RESTX
+  * PostgreSQL, MongoDB, Docker, Kubernetes, GitHub Actions
   
 Talks
 ======
