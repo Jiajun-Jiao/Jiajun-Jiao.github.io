@@ -3,7 +3,7 @@ title: "Victim as a Service: Designing a System for Engaging with Interactive Sc
 collection: publications
 permalink: /publication/2025-10-27-paper-title-number-3
 date: 2025-10-27
-venue: 'USENIX Security 2026'
+venue: 'USENIX Security'
 paperurl: 'https://arxiv.org/pdf/2510.23927'
 citation:
 ---
