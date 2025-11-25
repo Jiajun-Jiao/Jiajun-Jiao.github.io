@@ -3,7 +3,7 @@ title: "Elucidating STEM Concepts through Generative AI: A Multi-modal Explorati
 collection: publications
 permalink: /publication/2023-08-21-paper-title-number-1
 date: 2023-08-21
-venue: 'IJCAI2023 Symposium on Multimodal Reasoning with LLM'
+venue: 'IJCAI 2023 Symposium on Multimodal Reasoning with LLM'
 paperurl: 'https://arxiv.org/abs/2308.10454'
 citation: 
 ---
