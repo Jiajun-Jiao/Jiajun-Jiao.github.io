@@ -17,7 +17,7 @@ Education
 
 Work Experience
 ======
-* April 2025 - Now: AI Product Developer (Full-stack)
+* April 2025 - Now: Technical Product Manager
   * Helport AI, Inc. (Nasdaq: HPAI)
   * _For confidentiality reasons, I do not disclose details of my current work publicly. But feel free to reach out if you’d like to chat with me._
 
