@@ -15,5 +15,6 @@ I got my MS degree in Computer Science and Engineering at the University of Cali
 Previously, I earned a double major in Computer Science and Mathematics from New York University, graduating Magna Cum Laude with a cumulative GPA of 3.91. I was on the Dean’s List from 2020 to 2024 and was recognized as an NYU University Honors Scholar. In 2023, I was named one of freeCodeCamp’s Top Open Source Contributors.
 
 **Interesting tools I've Built:**
+* [AI-Map](https://voiceclone5090.helport.ai/aimap/) – A daily AI news and research aggregator that pulls from 30+ sources (major AI labs, arXiv, GitHub, Hacker News, Reddit, etc.) into a single dashboard.
 * [llm-cleaner](https://pypi.org/project/llm-cleaner/) – A Python package to sanitize and repair broken JSON from LLM responses.
   * [Try the Web Version here](https://json-sanitizer-897217736696.us-west1.run.app/)
