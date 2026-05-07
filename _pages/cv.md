@@ -17,7 +17,13 @@ Education
 
 Work Experience
 ======
-* April 2025 - Now: Technical Product Manager
+* May 2026 - Now: Director of Engineering, North America
+  * Helport AI, Inc. (Nasdaq: HPAI)
+  * Leading engineering for Helport AI's North American organization. Own technical strategy, architecture, and customer deployment for AI products across strategic enterprise customers in North America, Asia Pacific, and Latin America.
+  * Concurrently contributing to product strategy for core expert-cloning product line, working closely with product and commercial teams on roadmap and GTM.
+  * Building out a forward-deployed engineering team to scale customer onboarding in high-growth markets.
+
+* April 2025 - May 2026: Technical Product Manager
   * Helport AI, Inc. (Nasdaq: HPAI)
   * _For confidentiality reasons, I do not disclose details of my current work publicly. But feel free to reach out if you’d like to chat with me._
 

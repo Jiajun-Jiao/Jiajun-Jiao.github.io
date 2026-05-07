@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am an Technical Product Manager at Helport AI, Inc. (Nasdaq: HPAI). Actively hiring for Fullstack Engineer within my team.
+I'm Jiajun Jiao, Director of Engineering, North America at Helport AI, Inc. (Nasdaq: HPAI). I drive technical strategy, architecture, and customer deployment for our AI products across enterprise customers in North America, Asia Pacific, and Latin America. Alongside the engineering mandate, I drive product strategy for AI Labor System — our core expert-cloning product line. Recently promoted from Technical Product Manager, I'm now building out a forward-deployed engineering team to scale customer onboarding in high-growth markets.
 
-I got my MS degree in Computer Science and Engineering at the University of California, San Diego. I have multiple paper publications, and my research interests span multiple domains, including multimodal learning, security, education, and medical image segmentation.
+I hold an MS in Computer Science and Engineering from UC San Diego, and a BS in Computer Science and Mathematics from NYU. During my undergraduate years, I was named to the Dean's List each year, awarded the University Honor Scholar at NYU, and recognized as one of freeCodeCamp's Top Open Source Contributors of 2023.
 
-Previously, I earned a double major in Computer Science and Mathematics from New York University, graduating Magna Cum Laude with a cumulative GPA of 3.91. I was on the Dean’s List from 2020 to 2024 and was recognized as an NYU University Honors Scholar. In 2023, I was named one of freeCodeCamp’s Top Open Source Contributors.
+My technical interests sit at the intersection of agentic systems, voice AI (TTS, ASR, voice cloning), retrieval-augmented generation (RAG), and enterprise AI deployment — with continued curiosity about NLP, multimodal models, world models, and reasoning.
 
 **Interesting tools I've Built:**
 * [AI-Map](https://voiceclone5090.helport.ai/aimap/) – A daily AI news and research aggregator that pulls from 30+ sources (major AI labs, arXiv, GitHub, Hacker News, Reddit, etc.) into a single dashboard.
