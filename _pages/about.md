@@ -15,6 +15,6 @@ I hold an MS in Computer Science and Engineering from UC San Diego, and a BS in 
 My technical interests sit at the intersection of agentic systems, voice AI (TTS, ASR, voice cloning), retrieval-augmented generation (RAG), and enterprise AI deployment — with continued curiosity about NLP, multimodal models, world models, and reasoning.
 
 **Interesting tools I've Built:**
-* [AI-Map](https://voiceclone5090.helport.ai/aimap/) – A daily AI news and research aggregator that pulls from 30+ sources (major AI labs, arXiv, GitHub, Hacker News, Reddit, etc.) into a single dashboard.
+* [AI-Map](https://us.helport.ai/aimap/) – A daily AI news and research aggregator that pulls from 30+ sources (major AI labs, arXiv, GitHub, Hacker News, Reddit, etc.) into a single dashboard.
 * [llm-cleaner](https://pypi.org/project/llm-cleaner/) – A Python package to sanitize and repair broken JSON from LLM responses.
   * [Try the Web Version here](https://json-sanitizer-897217736696.us-west1.run.app/)
