@@ -1,0 +1,251 @@
+# ============================================================
+#  网站的全部内容都在这一个文件里。
+#  改这里 → git push → GitHub Actions 自动构建发布,一两分钟生效。
+#
+#  All site content lives in this single file.
+#  Layout lives in src/pages/index.astro, styles in src/styles/global.css.
+# ============================================================
+
+name: Jiajun Jiao
+role: Director of Engineering
+company: "Helport AI, Inc. (Nasdaq: HPAI)"
+companyUrl: https://www.helport.ai/
+location: San Diego, California
+email: jiajun.jiao.qd@gmail.com
+avatar: /profile.jpg
+
+# 左侧栏的一句话简介
+tagline: >-
+  I build and ship enterprise AI products (agentic systems, voice AI, RAG)
+  for customers across three continents.
+
+seo:
+  title: Jiajun Jiao · Director of Engineering at Helport AI
+  description: >-
+    Jiajun Jiao is Director of Engineering at Helport AI (Nasdaq: HPAI),
+    leading technical strategy, architecture, and enterprise AI deployment
+    across North America, Asia Pacific, and Latin America.
+
+# 首页自我介绍;每个 "- >-" 开头的块是一个段落
+intro:
+  - >-
+    I lead engineering for Helport AI's North American organization, owning
+    technical strategy, architecture, and customer deployment for our AI
+    products across enterprise customers in North America, Asia Pacific, and
+    Latin America. Alongside the engineering mandate, I drive product strategy
+    for AI Labor System, our core expert-cloning product line.
+  - >-
+    My work sits at the intersection of agentic systems, voice AI (TTS, ASR,
+    voice cloning), retrieval-augmented generation, and enterprise AI
+    deployment, with continued curiosity about NLP, multimodal models,
+    world models, and reasoning.
+  - >-
+    Outside of work, I run my own research projects in agentic systems,
+    LLM security, medical imaging, and embodied AI. If you work in any of
+    these areas and are looking for a research collaborator, I'd love to
+    hear from you.
+
+# "Now" 高亮框;留空 ("") 则不显示
+now: >-
+  Leading a team that ships end-to-end AI solutions, from system integration
+  to technical roadmap design. In parallel, running independent research in
+  agentic systems, LLM security, medical imaging, and embodied AI. Open to
+  research collaborations, feel free to reach out.
+
+# 社交链接;icon 可选: github / linkedin / scholar / x / email
+links:
+  - label: GitHub
+    icon: github
+    url: https://github.com/Jiajun-Jiao
+  - label: LinkedIn
+    icon: linkedin
+    url: https://www.linkedin.com/in/jiajunjiao/
+  - label: Google Scholar
+    icon: scholar
+    url: https://scholar.google.com/citations?user=Q74su3AAAAAJ
+  - label: X
+    icon: x
+    url: https://x.com/JiajunJiao
+  - label: Email
+    icon: email
+    url: mailto:jiajun.jiao.qd@gmail.com
+
+# 工作经历;bullets 可省略;note 会以斜体小字显示
+experience:
+  - role: Director of Engineering
+    company: "Helport AI, Inc. (Nasdaq: HPAI)"
+    period: May 2026 – Present
+    bullets:
+      - >-
+        Lead engineering for Helport AI's North American organization, owning
+        technical strategy, architecture, and customer deployment for AI
+        products across strategic enterprise customers in North America,
+        Asia Pacific, and Latin America.
+      - >-
+        Drive product strategy for the core expert-cloning product line,
+        working closely with product and commercial teams on roadmap and
+        go-to-market.
+      - >-
+        Lead hands-on solution delivery for enterprise customers, covering
+        system integration and technical roadmap design.
+  - role: Technical Product Manager
+    company: "Helport AI, Inc. (Nasdaq: HPAI)"
+    period: Apr 2025 – May 2026
+    note: >-
+      For confidentiality reasons, I don't disclose details of this work
+      publicly, but feel free to reach out if you'd like to chat.
+  - role: Frontend Software Engineer Intern
+    company: Plum Alley, Inc.
+    period: Oct 2023 – May 2024
+    bullets:
+      - >-
+        Modernized the official website (plumalley.co) with React and
+        JavaScript, improving responsiveness and load performance and
+        increasing site traffic by 85%.
+      - >-
+        Shipped outreach features (registration, notifications, feedback
+        collection) with 93% user satisfaction.
+      - >-
+        Applied AES-256 encryption at rest and TLS 1.2+ in transit to meet
+        encryption-compliance requirements.
+  - role: Fullstack Software Engineer Intern
+    company: UrsaTech, Inc.
+    period: Apr 2023 – Jan 2024
+    bullets:
+      - >-
+        Built an educational platform (React, TypeScript, Express) with
+        authentication, Q&A, and a Unity-based code editor, matching Figma
+        designs.
+      - >-
+        Designed and managed the MySQL database for scoring history;
+        validated APIs with Postman.
+      - >-
+        Integrated a Unity game into the platform with event-driven command
+        sequencing, resolving processing-rate mismatches between web services
+        and the game engine.
+
+skills: >-
+  Python · JavaScript / TypeScript · Java · SQL · React · Node.js · PyTorch ·
+  TensorFlow · PostgreSQL · MongoDB · Docker · Kubernetes · GitHub Actions
+
+# 作品/项目
+projects:
+  - name: AI-Map
+    url: https://voiceclone5090.helport.ai/aimap/
+    description: >-
+      Daily AI news and research aggregator that pulls 30+ sources (major AI labs,
+      arXiv, GitHub, Hacker News, Reddit and more) into a single dashboard.
+  - name: llm-cleaner
+    url: https://pypi.org/project/llm-cleaner/
+    description: >-
+      Python package that sanitizes and repairs broken JSON from LLM
+      responses.
+    extraLinks:
+      - label: Web version
+        url: https://json-sanitizer-897217736696.us-west1.run.app/
+
+# 论文;authors 里和 name 完全一致的名字会自动加粗
+publications:
+  - title: "Victim as a Service: Designing a System for Engaging with Interactive Scammers"
+    venue: arXiv preprint
+    year: 2025
+    url: https://arxiv.org/abs/2510.23927
+    authors:
+      [
+        Daniel Spokoyny, Nikolai Vogler, Xin Gao, Tianyi Zheng, Yufei Weng,
+        Jonghyun Park, Jiajun Jiao, Geoffrey M. Voelker, Stefan Savage,
+        Taylor Berg-Kirkpatrick,
+      ]
+    abstract: >-
+      Pig butchering and similar interactive online scams lower their victims'
+      defenses by building trust over extended periods of conversation —
+      sometimes spanning weeks or months. These scams have resulted in massive
+      public losses, estimated at over $75 billion in a recent study. In this
+      paper, we describe the motivation, design, implementation, and
+      experience with CHATTERBOX, an LLM-based system that automates long-term
+      engagement with online scammers, making large-scale investigations of
+      their tactics possible. We detail the techniques developed to attract
+      scam attempts, the system architecture and LLM engineering required to
+      convincingly engage with scammers, and the necessary capabilities to
+      satisfy or evade "milestones" in the scammers' workflow.
+  - title: "SceMQA: A Scientific College Entrance Level Multimodal Question Answering Benchmark"
+    venue: ACL
+    year: 2024
+    url: https://arxiv.org/abs/2402.05138
+    authors:
+      [
+        Zhenwen Liang, Kehan Guo, Gang Liu, Taicheng Guo, Yujun Zhou,
+        Tianyu Yang, Jiajun Jiao, Renjie Pi, Jipeng Zhang, Xiangliang Zhang,
+      ]
+    abstract: >-
+      SceMQA is a novel benchmark for scientific multimodal question answering
+      at the college entrance level, addressing a critical educational phase
+      often overlooked in existing benchmarks. It covers Mathematics, Physics,
+      Chemistry, and Biology with a blend of multiple-choice and free-response
+      formats, providing knowledge points and detailed explanations for every
+      problem. Evaluations of state-of-the-art open- and closed-source MLLMs
+      show only 50–60% accuracy for the strongest models, highlighting the
+      need for further research.
+  - title: "Elucidating STEM Concepts through Generative AI: A Multi-modal Exploration of Analogical Reasoning"
+    venue: IJCAI Symposium on Multimodal Reasoning with LLM
+    year: 2023
+    url: https://arxiv.org/abs/2308.10454
+    authors:
+      [Chen Cao, Zijian Ding, Gyeong-Geon Lee, Jiajun Jiao, Jionghao Lin, Xiaoming Zhai]
+    abstract: >-
+      This study integrates large language models with multi-modal analogical
+      reasoning to enhance STEM education: a system that transforms intricate
+      principles in mathematics, physics, and programming into comprehensible
+      visual metaphors, evaluated via a randomized A/B/C test measuring
+      learning gains and motivation.
+
+talks:
+  - title: Technical Feedback Sessions for NYU Stern TechMBAs
+    role: Guest Engineer
+    venue: NYU Stern School of Business
+    when: Oct & Dec 2024
+    where: Online
+    desc: >-
+      Provided technical-feasibility feedback on student product projects in
+      simulated product-development meetings for the Applied Technical
+      Foundations for Managers course.
+
+teaching:
+  - course: "CSE 291: Medical Image Analysis"
+    role: Teaching Assistant
+    org: UC San Diego
+    term: Spring 2025
+    level: Graduate course
+  - course: "CS 480: Algorithmic Problem Solving"
+    role: Tutor
+    org: NYU Courant
+    term: Fall 2023
+    level: Undergraduate course
+  - course: "CS 102: Data Structures"
+    role: Tutor
+    org: NYU Courant
+    term: Spring & Summer 2023
+    level: Undergraduate course
+
+education:
+  - degree: M.S. in Computer Science and Engineering
+    school: University of California, San Diego
+    years: 2024 – 2025
+  - degree: B.A. in Computer Science & B.A. in Mathematics
+    school: New York University
+    years: 2020 – 2024
+
+awards:
+  - text: NYU Magna Cum Laude with High Honors
+  - text: NYU Dean's List, every academic year (2020 – 2024)
+  - text: NYU University Honors Scholar
+  - text: freeCodeCamp Top Open Source Contributor of 2023
+    url: https://www.freecodecamp.org/news/top-open-source-contributors-2023/
+
+contact:
+  heading: Let's talk.
+  body: >-
+    Always happy to chat about enterprise AI, engineering leadership, or
+    research ideas. I'm especially open to research collaborations in agentic
+    systems, LLM security, medical imaging, and embodied AI. The fastest way
+    to reach me is email.

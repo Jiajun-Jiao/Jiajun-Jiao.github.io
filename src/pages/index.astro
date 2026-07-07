@@ -1,0 +1,320 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import site from '../data/site.yaml';
+
+const nav = [
+  { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'publications', label: 'Publications' },
+  { id: 'talks', label: 'Talks & Teaching' },
+  { id: 'education', label: 'Education' },
+  { id: 'contact', label: 'Contact' },
+];
+
+const year = new Date().getFullYear();
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  jobTitle: site.role,
+  worksFor: { '@type': 'Organization', name: 'Helport AI, Inc.' },
+  email: `mailto:${site.email}`,
+  url: 'https://jiajun-jiao.github.io/',
+  image: new URL(site.avatar, Astro.site).toString(),
+  alumniOf: site.education.map((e: any) => e.school),
+  sameAs: site.links
+    .map((l: any) => l.url)
+    .filter((u: string) => u.startsWith('http')),
+};
+---
+
+<Base title={site.seo.title} description={site.seo.description}>
+  <div class="layout">
+    <!-- ========== 左侧固定身份栏 ========== -->
+    <aside class="side">
+      <div>
+        <img class="avatar" src={site.avatar} alt={site.name} width="84" height="84" />
+        <h1>{site.name}</h1>
+        <p class="role">{site.role}</p>
+        <p class="org"><a href={site.companyUrl}>{site.company}</a></p>
+        <p class="loc">{site.location}</p>
+        <p class="tagline">{site.tagline}</p>
+      </div>
+
+      <nav class="side-nav" aria-label="Sections">
+        <ul>
+          {
+            nav.map((item) => (
+              <li>
+                <a href={`#${item.id}`}>{item.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <ul class="side-links">
+        {
+          site.links.map((link: any) => (
+            <li>
+              <a href={link.url} aria-label={link.label} title={link.label}>
+                <Icon name={link.icon} size={20} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
+
+    <!-- ========== 右侧内容 ========== -->
+    <main class="content">
+      <section class="section" id="about">
+        <h2>About</h2>
+        <div class="intro">
+          {site.intro.map((paragraph: string) => <p>{paragraph}</p>)}
+        </div>
+        {
+          site.now && (
+            <div class="now">
+              <span class="now-label">Now</span>
+              {site.now}
+            </div>
+          )
+        }
+      </section>
+
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="rows">
+          {
+            site.experience.map((job: any) => (
+              <article class="row">
+                <div class="xp-period">{job.period}</div>
+                <div>
+                  <h3 class="xp-role">
+                    {job.role} <span class="xp-org">· {job.company}</span>
+                  </h3>
+                  {job.bullets && (
+                    <ul>
+                      {job.bullets.map((bullet: string) => (
+                        <li>{bullet}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {job.note && <p class="xp-note">{job.note}</p>}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+        <p class="toolbox"><strong>Toolbox</strong>: {site.skills}</p>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="rows">
+          {
+            site.projects.map((project: any) => (
+              <article class="row single project">
+                <div>
+                  <h3>
+                    <a class="ext" href={project.url}>
+                      {project.name}
+                    </a>
+                  </h3>
+                  <p>{project.description}</p>
+                  {project.extraLinks && (
+                    <div class="plinks">
+                      {project.extraLinks.map((link: any) => (
+                        <a class="ext" href={link.url}>
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="publications">
+        <h2>Publications</h2>
+        <div class="rows">
+          {
+            site.publications.map((pub: any) => (
+              <article class="row single pub">
+                <div>
+                  <p class="pub-meta">
+                    {pub.venue} · {pub.year}
+                  </p>
+                  <h3>
+                    <a href={pub.url}>{pub.title}</a>
+                  </h3>
+                  <p class="pub-authors">
+                    {pub.authors.map((author: string, i: number) => (
+                      <>
+                        {author === site.name ? <strong>{author}</strong> : author}
+                        {i < pub.authors.length - 1 && ', '}
+                      </>
+                    ))}
+                  </p>
+                  {pub.abstract && (
+                    <details>
+                      <summary>Abstract</summary>
+                      <p>{pub.abstract}</p>
+                    </details>
+                  )}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="talks">
+        <h2>Talks &amp; Teaching</h2>
+        <h3 class="sub">Invited Sessions</h3>
+        <div class="cards">
+          {
+            site.talks.map((talk: any) => (
+              <article class="card card-wide">
+                <div class="card-head">
+                  <span class="chip"><Icon name="mic" size={17} /></span>
+                  <span class="card-role">{talk.role}</span>
+                </div>
+                <p class="card-title">{talk.title}</p>
+                <p class="card-org">{talk.venue}</p>
+                {talk.desc && <p class="card-desc">{talk.desc}</p>}
+                <div class="pills">
+                  {talk.when && <span class="pill">{talk.when}</span>}
+                  {talk.where && <span class="pill">{talk.where}</span>}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+        <h3 class="sub">Teaching</h3>
+        <div class="cards">
+          {
+            site.teaching.map((item: any) => (
+              <article class="card">
+                <div class="card-head">
+                  <span class="chip"><Icon name="scholar" size={17} /></span>
+                  <span class="card-role">{item.role}</span>
+                </div>
+                <p class="card-title">{item.course}</p>
+                <p class="card-org">{item.org}</p>
+                <div class="pills">
+                  {item.term && <span class="pill">{item.term}</span>}
+                  {item.level && <span class="pill">{item.level}</span>}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education &amp; Honors</h2>
+        <div class="edu">
+          {
+            site.education.map((entry: any) => (
+              <div class="edu-item">
+                <div>
+                  <p class="item-title">{entry.degree}</p>
+                  <p class="item-meta">{entry.school}</p>
+                </div>
+                <p class="edu-years">{entry.years}</p>
+              </div>
+            ))
+          }
+        </div>
+        <ul class="awards">
+          {
+            site.awards.map((award: any) => (
+              <li>
+                {award.url ? (
+                  <a class="ext" href={award.url}>
+                    {award.text}
+                  </a>
+                ) : (
+                  award.text
+                )}
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p class="contact-big">{site.contact.heading}</p>
+        <p class="contact-body">{site.contact.body}</p>
+        <p class="contact-email">
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </p>
+      </section>
+
+      <footer class="colophon">
+        <span>© {year} Jiajun Jiao</span>
+        <span>
+          <a href="https://astro.build">Built with Astro</a> ·
+          <a href="https://github.com/Jiajun-Jiao/Jiajun-Jiao.github.io">Source</a>
+        </span>
+      </footer>
+    </main>
+  </div>
+
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+
+  <script is:inline>
+    // 滚动时高亮左侧导航对应章节
+    const navLinks = Array.from(document.querySelectorAll('.side-nav a'));
+    const sections = navLinks
+      .map((a) => document.getElementById(a.getAttribute('href').slice(1)))
+      .filter(Boolean);
+    const spy = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            navLinks.forEach((a) =>
+              a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id)
+            );
+          }
+        }
+      },
+      { rootMargin: '-25% 0px -65% 0px' }
+    );
+    sections.forEach((s) => spy.observe(s));
+
+    // 元素进入视口时上浮显现,同组内做阶梯延迟
+    const targets = document.querySelectorAll(
+      '.section > h2, .sub, .intro p, .now, .row, .card, .toolbox, .edu-item, .awards li, .contact-big, .contact-body, .contact-email'
+    );
+    const counts = new Map();
+    targets.forEach((el) => {
+      const parent = el.parentElement;
+      const n = counts.get(parent) ?? 0;
+      counts.set(parent, n + 1);
+      el.style.setProperty('--d', Math.min(n, 5) * 70 + 'ms');
+      el.classList.add('reveal');
+    });
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.05, rootMargin: '0px 0px -6% 0px' }
+    );
+    targets.forEach((el) => io.observe(el));
+  </script>
+</Base>

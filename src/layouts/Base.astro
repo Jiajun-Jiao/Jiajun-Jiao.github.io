@@ -1,0 +1,77 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/source-serif-4';
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/profile.jpg', Astro.site);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      // 默认永远浅色(阳光主题);只有用户手动切换过才用记住的选择
+      document.documentElement.dataset.theme = localStorage.getItem('theme') ?? 'light';
+    </script>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true">
+      <span class="a1"></span>
+      <span class="a2"></span>
+      <span class="a3"></span>
+    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme">
+      <Icon name="sun" size={16} class="icon-sun" />
+      <Icon name="moon" size={16} class="icon-moon" />
+    </button>
+
+    <slot />
+
+    <script is:inline>
+      document.getElementById('theme-toggle')?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem('theme', next);
+      });
+
+      // 暖色光斑跟随鼠标(rAF 节流)
+      let glowRaf = 0;
+      window.addEventListener(
+        'pointermove',
+        (e) => {
+          if (glowRaf) return;
+          glowRaf = requestAnimationFrame(() => {
+            glowRaf = 0;
+            const s = document.documentElement.style;
+            s.setProperty('--mx', e.clientX + 'px');
+            s.setProperty('--my', e.clientY + 'px');
+          });
+        },
+        { passive: true }
+      );
+    </script>
+  </body>
+</html>
