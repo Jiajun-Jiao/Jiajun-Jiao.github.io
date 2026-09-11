@@ -14,6 +14,11 @@ location: San Diego, California
 email: jiajun.jiao.qd@gmail.com
 avatar: /profile.jpg
 
+# Google Analytics 4（标准版免费）。填入 G- 开头的 Measurement ID 后发布即可启用。
+# 留空关闭统计；本地开发和预览不会计入访问量。此 ID 是公开标识，不是密码。
+analytics:
+  googleAnalyticsId: "G-GP2PZHP30T"
+
 # 左侧栏的一句话简介
 tagline: >-
   I build and ship enterprise AI products (agentic systems, voice AI, RAG)

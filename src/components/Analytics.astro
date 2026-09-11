@@ -1,0 +1,32 @@
+---
+import site from '../data/site.yaml';
+
+const measurementId = site.analytics?.googleAnalyticsId?.trim() ?? '';
+const siteOrigin = Astro.site?.origin;
+
+if (measurementId && !/^G-[A-Z0-9]+$/.test(measurementId)) {
+  throw new Error('analytics.googleAnalyticsId must be a GA4 Measurement ID starting with G-.');
+}
+
+const enabled = import.meta.env.PROD && measurementId && siteOrigin;
+---
+
+{enabled && (
+  <script is:inline define:vars={{ measurementId, siteOrigin }}>
+    // Keep local production previews and other hosts out of the site's analytics.
+    if (window.location.origin === siteOrigin) {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', measurementId, {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+      });
+
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+      document.head.appendChild(script);
+    }
+  </script>
+)}
